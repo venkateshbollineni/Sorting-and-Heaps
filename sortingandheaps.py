@@ -123,3 +123,15 @@ if __name__ == "__main__":
         if continue_choice == 1:
             print("Goodbye")
             break
+
+def user_selection(prompt, options):
+    while True:
+        print(prompt)
+        for i, option in enumerate(options, 1):
+            print(f"{i}. {option}")
+        choice = input("Input your selection(numeric value): ")
+        if choice.isdigit() and 1 <= int(choice) <= len(options):
+            return int(choice) - 1
+        else:
+            print("Invalid selection, please try again.")
+    

@@ -131,7 +131,7 @@ def user_selection(prompt, options):
             print(f"{i}. {option}")
         choice = input("Input your selection(numeric value): ")
         if choice.isdigit() and 1 <= int(choice) <= len(options):
-            return str(choice) - 1
+            return float(choice) - 1
         else:
             print("Invalid selection, please try again.")
     

@@ -9,7 +9,7 @@ def random_function(a:int, b:int) -> int:
         # "3" : "multiplication"
     }
     if random_map == random_map[0]:
-        return a + b
+        return a * b
     # elif random_map == random_map[1]:
     #     return a - b
     else:

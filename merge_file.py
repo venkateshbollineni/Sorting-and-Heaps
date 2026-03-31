@@ -9,7 +9,7 @@ def random_function(a:int, b:int) -> int:
         # "3" : "multiplication"
     }
     if random_output == 1:
-        return a / b
+        return a * b
     else:
         return a + b
     
